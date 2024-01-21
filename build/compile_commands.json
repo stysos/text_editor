@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/styson/cpp/text-editor/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/text_editor.dir/main.cpp.o -c /home/styson/cpp/text-editor/main.cpp",
+  "file": "/home/styson/cpp/text-editor/main.cpp"
+}
+]
