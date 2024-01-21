@@ -5,6 +5,8 @@
 struct FileInformation {
 
     std::string fileName;
+    
+    std::ifstream openFile;
 };
 
 class FileHandler {
@@ -15,9 +17,11 @@ class FileHandler {
 
     // Copy constructor
     // Move constructor 
-    
+
 
     private:
-    FileInformation fileInformation;
+    FileInformation fileInfo;
+
+    int openFile(std::string fileName);
 
 };

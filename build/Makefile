@@ -523,6 +523,30 @@ text_editor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/build
 .PHONY : text_editor/fast
 
+fileHandler.o: fileHandler.cpp.o
+.PHONY : fileHandler.o
+
+# target to build an object file
+fileHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/fileHandler.cpp.o
+.PHONY : fileHandler.cpp.o
+
+fileHandler.i: fileHandler.cpp.i
+.PHONY : fileHandler.i
+
+# target to preprocess a source file
+fileHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/fileHandler.cpp.i
+.PHONY : fileHandler.cpp.i
+
+fileHandler.s: fileHandler.cpp.s
+.PHONY : fileHandler.s
+
+# target to generate assembly for a file
+fileHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/fileHandler.cpp.s
+.PHONY : fileHandler.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -587,6 +611,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... text_editor"
+	@echo "... fileHandler.o"
+	@echo "... fileHandler.i"
+	@echo "... fileHandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

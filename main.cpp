@@ -1,12 +1,19 @@
 #include <iostream>
+#include <string>
+#include <memory>
 
-int main(int, char**){
+#include "fileHandler.hpp"
 
-    std::cout << "Text editor beginnings" << std::endl;
+int main(int, char** argv){
 
-}
-
-
-int openFile(std::string fileName) {
+    // Assuming correct argv for now (Single argument of string).
+    // TODO: Checks for strings.
+    if (!argv[1]) {
+        std::cerr << "No file name specified" << std::endl;
+        exit(0);
+    }
     
+    auto fileName = std::string(argv[1]);
+    
+    auto testHandler = std::make_unique<FileHandler>(fileName);
 }
