@@ -15,7 +15,7 @@ void BoyerMoore::preProcessBadChar() {
   badChar.resize(numberOfChars, m);
 
   for (int i = 0; i < m - 1; ++i) {
-    badChar[static_cast<int>(pattern[i])] = m - 1 - i;
+    badChar[pattern[i]] = m - 1 - i;
   }
 }
 
@@ -26,10 +26,9 @@ std::vector<int> BoyerMoore::search(const std::string& text) {
   int n = text.length();
   int i = 0;
 
-
-    if (m < 1) {
-        return std::vector<int>({});
-    }
+  if (m < 1) {
+    return std::vector<int>({});
+  }
 
   while (i <= n - m) {
     int j = m - 1;
@@ -47,10 +46,10 @@ std::vector<int> BoyerMoore::search(const std::string& text) {
       i += m;
     } else {
       // Shift the pattern based on bad character heuristic
-      int badCharShift = badChar[static_cast<int>(text[i + j])] - (m - 1 - j);
+      int badCharShift = badChar[text[i + j]] - (m - 1 - j);
+
       i += std::max(1, badCharShift);
     }
-
   }
 
   return occurrences;
