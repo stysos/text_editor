@@ -523,6 +523,30 @@ text_editor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/build
 .PHONY : text_editor/fast
 
+boyerMoore.o: boyerMoore.cpp.o
+.PHONY : boyerMoore.o
+
+# target to build an object file
+boyerMoore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/boyerMoore.cpp.o
+.PHONY : boyerMoore.cpp.o
+
+boyerMoore.i: boyerMoore.cpp.i
+.PHONY : boyerMoore.i
+
+# target to preprocess a source file
+boyerMoore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/boyerMoore.cpp.i
+.PHONY : boyerMoore.cpp.i
+
+boyerMoore.s: boyerMoore.cpp.s
+.PHONY : boyerMoore.s
+
+# target to generate assembly for a file
+boyerMoore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/text_editor.dir/build.make CMakeFiles/text_editor.dir/boyerMoore.cpp.s
+.PHONY : boyerMoore.cpp.s
+
 fileHandler.o: fileHandler.cpp.o
 .PHONY : fileHandler.o
 
@@ -611,6 +635,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... text_editor"
+	@echo "... boyerMoore.o"
+	@echo "... boyerMoore.i"
+	@echo "... boyerMoore.s"
 	@echo "... fileHandler.o"
 	@echo "... fileHandler.i"
 	@echo "... fileHandler.s"

@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/text_editor.dir/main.cpp.o CMakeFiles/text_editor.dir/fileHandler.cpp.o -o text_editor 
+/usr/bin/g++ -g -rdynamic CMakeFiles/text_editor.dir/main.cpp.o CMakeFiles/text_editor.dir/fileHandler.cpp.o CMakeFiles/text_editor.dir/boyerMoore.cpp.o -o text_editor  /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a 

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/text_editor.dir/boyerMoore.cpp.o"
+  "CMakeFiles/text_editor.dir/boyerMoore.cpp.o.d"
   "CMakeFiles/text_editor.dir/fileHandler.cpp.o"
   "CMakeFiles/text_editor.dir/fileHandler.cpp.o.d"
   "CMakeFiles/text_editor.dir/main.cpp.o"

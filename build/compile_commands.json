@@ -1,12 +1,17 @@
 [
 {
   "directory": "/home/styson/cpp/text-editor/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/text_editor.dir/main.cpp.o -c /home/styson/cpp/text-editor/main.cpp",
+  "command": "/usr/bin/g++   -g -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/text_editor.dir/main.cpp.o -c /home/styson/cpp/text-editor/main.cpp",
   "file": "/home/styson/cpp/text-editor/main.cpp"
 },
 {
   "directory": "/home/styson/cpp/text-editor/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/text_editor.dir/fileHandler.cpp.o -c /home/styson/cpp/text-editor/fileHandler.cpp",
+  "command": "/usr/bin/g++   -g -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/text_editor.dir/fileHandler.cpp.o -c /home/styson/cpp/text-editor/fileHandler.cpp",
   "file": "/home/styson/cpp/text-editor/fileHandler.cpp"
+},
+{
+  "directory": "/home/styson/cpp/text-editor/build",
+  "command": "/usr/bin/g++   -g -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/text_editor.dir/boyerMoore.cpp.o -c /home/styson/cpp/text-editor/boyerMoore.cpp",
+  "file": "/home/styson/cpp/text-editor/boyerMoore.cpp"
 }
 ]
