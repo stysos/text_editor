@@ -24,5 +24,4 @@ TEST(BoyerMooreTest, SearchTest) {
   std::cout << std::endl;
   EXPECT_EQ(result2, std::vector<int>({10, 42}));
 
-  // Add more test cases as needed
 }
