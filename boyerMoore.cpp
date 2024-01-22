@@ -26,13 +26,16 @@ std::vector<int> BoyerMoore::search(const std::string& text) {
   int n = text.length();
   int i = 0;
 
+
+    if (m < 1) {
+        return std::vector<int>({});
+    }
+
   while (i <= n - m) {
     int j = m - 1;
 
     // Check for a match
     while (j >= 0 && pattern[j] == text[i + j]) {
-      std::cout << "Matching characters: " << pattern[j] << " and "
-                << text[i + j] << std::endl;
       --j;
     }
 
@@ -48,12 +51,6 @@ std::vector<int> BoyerMoore::search(const std::string& text) {
       i += std::max(1, badCharShift);
     }
 
-    // Debug prints
-    std::cout << "i: " << i << ", j: " << j << std::endl;
-  }
-
-  for (int pos : occurrences) {
-    std::cout << pos << std::endl;
   }
 
   return occurrences;

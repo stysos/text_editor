@@ -12,16 +12,17 @@ TEST(BoyerMooreTest, SearchTest) {
   std::vector<int> result2 =
       bm2.search("This is a pattern matching example with a pattern");
 
-  // Debug prints
-  std::cout << "Pattern: "
-            << "pattern" << std::endl;  // Directly print the pattern
-  std::cout << "Text: "
-            << "This is a pattern matching example with a pattern" << std::endl;
-  std::cout << "Actual Result: ";
-  for (int pos : result2) {
-    std::cout << pos << " ";
-  }
-  std::cout << std::endl;
   EXPECT_EQ(result2, std::vector<int>({10, 42}));
+}
 
+TEST(BoyerMooreTest, EmptyTest) {
+  BoyerMoore bm("");
+  std::vector<int> result = bm.search("hello");
+  EXPECT_EQ(result, std::vector<int>({}));
+}
+
+TEST(BoyerMooreTest, NotPresent) {
+BoyerMoore bm(" ");
+std::vector<int> result = bm.search("hello");
+EXPECT_EQ(result, std::vector<int>({}));
 }
